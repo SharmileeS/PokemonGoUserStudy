@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Final result chart</title>
+
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="http://www.amcharts.com/lib/3/pie.js"></script>
+		<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/chalk.js"></script>
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("finaldiv",
+				{
+					"type": "pie",
+					"angle": 12,
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"depth3D": 15,
+					"titleField": "category",
+					"valueField": "column-1",
+					"theme": "chalk",
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Type 1 Male",
+							"column-1": "6"
+						},
+						{
+							"category": "Type 1 Female",
+							"column-1": "3"
+						},
+						{
+							"category": "Type 2 Male",
+							"column-1": "2"
+						},
+						{
+							"category": "Type 2 Female",
+							"column-1": "0"
+						},
+						{
+							"category": "Type 3 Male",
+							"column-1": "3"
+						},
+						{
+							"category": "Type 3 Female",
+							"column-1": "0"
+						},
+						{
+							"category": "Type 4 Male",
+							"column-1": "6"
+						},
+						{
+							"category": "Type 4 Female",
+							"column-1": "6"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="finaldiv" style="width: 100%; height: 400px; background-color: #282828;" ></div>
+	</body>
+</html>

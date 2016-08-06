@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+s
+</head>
+<body>
+<div id="chart"></div>
+<script>
+
+    var chart = c3.generate({
+        bindto: '#chart',
+        data: {
+            type: 'bar',
+            x: 'times',
+            xFormat: '%H:%M %p', // how the date is parsed
+            columns: [
+                ['times','12:00 AM','01:00 AM','01:30 AM','02:00 AM','02:30 AM','03:00 AM','04:00 AM','07:00 AM','08:00 AM','01:00 PM','03:00 PM','04:30 PM','06:00 PM','06:30 PM','08:30 PM','10:00 PM','10:30 PM'],
+                ['Type 1',0,2,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0],
+                ['Type 2',1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0],
+                ['Type 3',0,1,0,0,2,0,0,1,1,1,1,1,0,0,1,1,1],
+                ['Type 4',0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0]
+            ],
+            groups: [
+            ['Type 1', 'Type 2', 'Type 3', 'Type 4']
+        ]
+        },
+        axis: {
+             x: {
+              label: 'Time',
+              type: 'timeseries',
+              tick: {
+                    format: '%H:%M %p',
+                    count: '30',
+                    centered: true
+                }
+            },
+            y: {
+                label: 'Number of crimes',
+                format: function (d) { return d; },
+                fit: true
+            }
+        },
+        transition: {
+            duration: 1500
+        }
+                     
+    });
+
+</script>
+</body>

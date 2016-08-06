@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<title> Pokemon Go Crime Study </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- amCharts javascript sources -->
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/pie.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/black.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/dark.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/chalk.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="c3/c3.min.css">
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="c3/c3.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+    
+<script> 
+$(function() {
+$("#collapseOne").load("TypeVsTime.html"); 
+$("#collapseTwo").load("MaleVsFemale.html"); 
+$("#collapseFour").load("AloneOrNot.html"); 
+$('#collapseFive').load("FinalResult.html");
+}); 
+</script>
+
+<style type="text/css">
+.jumbotron  {
+      float:top;
+      background-color:black !important;
+      color:white;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      padding-top: 5px;
+      text-align: left;
+    }
+
+</style>
+</head>
+<body>
+      <div class="jumbotron">
+          <h2>Pokemon Go Crime Data Study</h2>      
+          <p style="color:grey;"> Crime data visualizations for different parameters  </p>
+
+      </div>
+
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Type Vs. Time Analysis
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Male Vs. Female Victim Analysis
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Analysis across U.S. states
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                <iframe width="1250" height="500" src="http://www.openheatmap.com/embed.html?map=SubtilenessesOctothorpImitancy"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Analysis based on whether victims where alone
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+              
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFive">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Final Results from Data and Survey
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="panel-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

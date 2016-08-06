@@ -1,0 +1,26 @@
+GenderofVictim,Date,Time,Location,CrimeType,Description,AloneOrNot
+Male,07.10.16,2:00:00 AM,"O'Fallon, Missouri",4,Robbery,No
+Female,07.10.16,2:30:00 AM,"Toledo, Ohio",3,Trespassing,No
+Male,07.10.16,2:30:00 AM,"Toledo, Ohio",3,Trespassing,No
+Male ,07.10.16,3:00:00 PM,"Macon, Georgia",3,Car crash,Yes
+Female,07.10.16,4:30:00 PM,"Seneca, California",3,fell in the creek,Yes
+Male,07.10.16,1:30:00 AM,Florida,2,Stabbing,Yes
+Female,07.11.16,8:40:00 PM,"Bay Area, California",3,Fell into a ditch,Yes
+Male,07.13.16,3:00:00 AM,"Auburn, Alabama",4,Robbery,Yes
+Male,07.13.16,1:00:00 AM,North Carolina,1,Shooting,No
+Male,07.13.16,12:00:00 AM,"Anaheim Park, California",2,Stabbing,Yes
+Female,07.13.16,10:00:00 PM,"Springfield, California",4,Robbery,Yes
+Male,07.14.16,1:00:00 PM,"Encinitas, California",3,Accident,No
+Male,07.14.16,1:00:00 PM,"Encinitas, California",3,Accident,No
+Female,07.15.16,2:00:00 AM,"Redding, California",2,Stabbing,No
+Male,07.16.16,1:00:00 AM,"Palm Coast, Florida",1,Shooting,No
+Male,07.16.16,3:00:00 AM,"Dover, Denver",4,Robbery,Yes
+Male,07.18.16,6:30:00 PM,"Chiquimula,Guatemala",1,Shooting,No
+Male,07.18.16,10:00:00 PM,"Greenville,North Carolina",2,Stabbing,No
+Male,07.18.16,7:00:00 AM,"Baltimore,Maryland",3,Car Crash,Yes
+Male,07.20.16,1:00:00 AM,"Knoxville, Tennessee",3,fatal truck accident,Yes
+Male,07.21.16,10:00:00 PM,"Sweetgrass,Montana",3,Trespassing,No
+Male,07.21.16,10:30:00 PM,"Tampa, Florida",3,Trespassing,No
+Female,07.22.16,6:00:00 PM,"San Francisco, California",1,Robbery,Yes
+Male,07.24.16,8:15:00 AM,"Rutland, Vermont",3,Car crash,Yes
+Male,07.25.16,4:00:00 AM,"Las Vegas, California",1,Shooting,No
